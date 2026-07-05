@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PDF Viewer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<div class="dashboard-header">
+
+<h2>📄 PDF Preview</h2>
+
+<a href="notes.html" class="btn">⬅ Back</a>
+
+</div>
+
+<iframe
+id="pdfFrame"
+width="100%"
+height="700px"
+style="border:none;border-radius:15px;">
+</iframe>
+
+</div>
+
+<script>
+
+const params=new URLSearchParams(window.location.search);
+
+const file=params.get("file");
+alert(file);
+if(file){
+document.getElementById("pdfFrame").src = file;
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+<div class="dashboard-header">
+
+<h2>🎓 Student Dashboard</h2>
+
+<div>
+
+<a href="index.html" class="btn">🏠 Home</a>
+
+<button class="btn logout-btn" onclick="logoutUser()">
+🚪 Logout
+</button>
+
+</div>
+
+</div>
+<h1>🎉 Welcome to Student Doubt Hub</h1>
+
+<div class="welcome-card">
+
+<h2>Welcome 👋</h2>
+
+<p id="welcome"></p>
+
+</div>
+
+<div class="dashboard-cards">
+
+<a href="courses.html" class="card">
+    <h2>📚 Courses</h2>
+    <p>12 Courses Available</p>
+</a>
+
+<a href="ask-doubt.html" class="card">
+    <h2>❓ Ask Doubt</h2>
+    <p>Ask your academic doubts.</p>
+</a>
+
+<a href="quiz.html" class="card">
+    <h2>📝 Quiz</h2>
+    <p>Practice Daily Quiz.</p>
+</a>
+
+<a href="notes.html" class="card">
+    <h2>📄 Notes</h2>
+    <p>Download Notes</p>
+</a>
+<a href="profile.html" class="card">
+<h2>👤 Profile</h2>
+<p>View Student Profile</p>
+</a>
+ 
+<div class="card">
+
+    <h3>📄 Study Notes</h3>
+
+    <p>Download notes uploaded by Admin.</p>
+
+    <a href="notes-dynamic.html" class="btn">
+        Open Notes
+    </a>
+
+</div>
+
+</div>
+<script src="script.js"></script>
+<script type="module" src="auth.js"></script>
+<script type="module" src="logout.js"></script>
+</body>
+</html>

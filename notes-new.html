@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Study Notes</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="dashboard">
+
+<div class="dashboard-header">
+
+<h2>📄 Study Notes</h2>
+
+<a href="dashboard.html" class="btn">⬅ Dashboard</a>
+
+</div>
+
+<p>Download Notes for your subjects.</p>
+
+<input
+type="text"
+id="searchNotes"
+class="search-box"
+placeholder="🔍 Search Notes..."
+onkeyup="searchNotes()">
+
+<div class="dashboard-cards" id="notesContainer">
+
+<div class="card note-card">
+
+<h2>📘 Physics</h2>
+
+<p>Ray Optics Notes</p>
+
+<p>
+Downloads :
+<span id="physicsCount">0</span>
+</p>
+
+<button
+class="btn"
+onclick="previewPDF('notes/physics.pdf')">
+
+👀 Preview
+
+</button>
+
+<br><br>
+
+<button
+class="btn"
+onclick="downloadPDF('physics')">
+
+📥 Download
+
+</button>
+
+</div>
+
+<div class="card note-card">
+<h2>🧮 Mathematics</h2>
+<p>Integration Notes</p>
+<p>
+Downloads :
+<span id="mathematicsCount">0</span>
+</p>
+<button class="btn" onclick="previewPDF('notes/mathematics.pdf')">👀 Preview</button>
+<button class="btn" onclick="downloadPDF('mathematics')">📥 Download</button>
+</div>
+
+<div class="card note-card">
+
+<h2>⚗️ Chemistry</h2>
+
+<p>Organic Chemistry Notes</p>
+
+<p>
+Downloads :
+<span id="chemistryCount">0</span>
+</p>
+
+<button class="btn" 
+onclick="previewPDF('notes/chemistry.pdf')">
+👀 Preview
+</button>
+
+<br><br>
+
+<button
+ class="btn" 
+ onclick="downloadPDF('chemistry')">
+📥 Download
+</button>
+
+</div>
+
+<div class="card note-card">
+<h2>💻 Computer</h2>
+<p>HTML CSS JavaScript</p>
+<p>
+Downloads :
+<span id="computerCount">0</span>
+</p>
+<button class="btn" onclick="previewPDF('notes/computer.pdf')">👀 Preview</button>
+<button class="btn" onclick="downloadPDF('computer')">📥 Download</button>
+</div>
+
+<div class="card note-card">
+<h2>🧬 Biology</h2>
+<p>Genetics Notes</p>
+<p>
+Downloads :
+<span id="biologyCount">0</span>
+</p>
+<button class="btn" onclick="previewPDF('notes/biology.pdf')">👀 Preview</button>
+<button class="btn" onclick="downloadPDF('biology')">📥 Download</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

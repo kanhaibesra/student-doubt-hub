@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz | Student Doubt Hub</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>📝 Physics Quiz</h1>
+<p id="progress"></p>
+
+<h3>⏳ Time Left: <span id="timer">30</span> sec</h3>
+<div class="welcome-card">
+
+<h2 id="question">Question will appear here</h2>
+
+<div class="options">
+
+<button class="option-btn" onclick="checkAnswer(0)" id="option0"></button>
+
+<button class="option-btn" onclick="checkAnswer(1)" id="option1"></button>
+
+<button class="option-btn" onclick="checkAnswer(2)" id="option2"></button>
+
+<button class="option-btn" onclick="checkAnswer(3)" id="option3"></button>
+
+</div>
+
+<br>
+
+<button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>
+Next ➜
+</button>
+
+<br><br>
+
+<p id="score"></p>
+
+<a href="dashboard.html" class="btn">⬅ Dashboard</a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

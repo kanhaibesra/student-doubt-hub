@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ask Doubt</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<div class="dashboard-header">
+
+<h2>❓ Ask Your Doubt</h2>
+
+<a href="dashboard.html" class="btn">⬅ Dashboard</a>
+
+</div>
+
+<div class="profile-card">
+
+<input
+type="text"
+id="subject"
+placeholder="Subject">
+
+<br><br>
+
+<textarea
+id="question"
+placeholder="Write your doubt here..."
+rows="6"></textarea>
+
+<br><br>
+
+<button class="btn" onclick="saveDoubt()">
+
+📩 Submit Doubt
+
+</button>
+
+</div>
+
+<h2 style="margin-top:40px;">📚 My Doubts</h2>
+
+<div id="doubtList"></div>
+
+</div>
+
+<script type="module" src="ask-doubt.js"></script>
+
+</body>
+
+</html>

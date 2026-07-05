@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-header">
+
+<h2>👨‍💼 Admin Dashboard</h2>
+
+<div>
+
+<a href="upload-notes.html" class="btn">
+📚 Upload Notes
+</a>
+<a href="admin-notes.html" class="btn">
+📂 Manage Notes
+</a>
+<button class="btn" onclick="adminLogout()">
+Logout
+</button>
+
+</div>
+
+</div>
+
+<!-- Statistics Cards -->
+<div class="dashboard-cards">
+
+<div class="card">
+<h2>👨‍🎓 Students</h2>
+<h1 id="totalStudents">0</h1>
+<p>Registered Students</p>
+</div>
+
+<div class="card">
+<h2>📥 Downloads</h2>
+<h1 id="totalDownloads">0</h1>
+<p>PDF Downloads</p>
+</div>
+
+<div class="card">
+<h2>❓ Doubts</h2>
+<h1 id="totalDoubts">0</h1>
+<p>Questions Asked</p>
+</div>
+
+<div class="card">
+<h2>📚 Courses</h2>
+<h1>7</h1>
+<p>Available Courses</p>
+</div>
+
+<div class="card">
+<h2>🏆 Quiz Score</h2>
+<h1 id="adminQuizScore">0</h1>
+<p>Highest Score</p>
+</div>
+
+</div>
+
+<hr>
+
+<h2>❓ Student Doubts</h2>
+
+<div id="adminDoubtList">
+
+<p>No Doubts Found.</p>
+
+</div>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+<script type="module" src="admin-auth.js"></script>
+
+</body>
+</html>

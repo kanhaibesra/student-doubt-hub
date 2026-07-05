@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Notes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <div class="dashboard-header">
+
+        <h2>📚 Upload Notes</h2>
+
+        <a href="admin-dashboard.html" class="btn">
+            ⬅ Back
+        </a>
+
+    </div>
+
+    <div class="profile-card">
+
+        <input
+        type="text"
+        id="subject"
+        placeholder="Subject Name">
+
+        <br><br>
+
+        <input
+        type="file"
+        id="pdfFile"
+        accept=".pdf">
+
+        <br><br>
+
+        <button
+        class="btn"
+        id="uploadBtn">
+
+        ⬆ Upload PDF
+
+        </button>
+
+    </div>
+
+</div>
+
+<script type="module" src="upload-notes.js"></script>
+
+</body>
+</html>
